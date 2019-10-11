@@ -1,15 +1,31 @@
 import React from "react";
+import styled from 'styled-components';
 
+
+const Cards = styled.div`
+    width: 80%;
+    display: flex;
+    background: blue;
+    margin: 10px auto;
+
+`;
+
+const SmurfInfo = styled.h2`
+    width: 30%;
+    flex-direction: column;
+    margin: 10px 0;
+    color: white;
+`;
 
 const SmurfCard = props => {
     console.log(props)
     return (
        
-            <div>
-                <h2>Name: {props.smurfData.name}</h2>
-                <h2>Age: {props.smurfData.age}</h2>
-                <h2>Height: {props.smurfData.height}</h2>
-            </div>
+            <Cards>
+                <SmurfInfo>Name: {props.smurfData.name}</SmurfInfo>
+                <SmurfInfo>Age: {props.smurfData.age}</SmurfInfo>
+                <SmurfInfo>Height: {props.smurfData.height}</SmurfInfo>
+            </Cards>
       
     )
 }

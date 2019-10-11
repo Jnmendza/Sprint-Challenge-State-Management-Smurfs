@@ -22,7 +22,7 @@ const Form = (props) => {
     }
 
     return (
-        <div className="formCSS">
+        <div className="form">
             <form>
                 <input name="name" type="text" placeholder="Smurf's Name" onChange={handleChanges}></input>
                 <input name="age" type="text" placeholder="Smurf's Age" onChange={handleChanges}></input>
